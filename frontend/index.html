@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grammar & Vocabulary Helper</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+  <div class="container">
+    <h1><i class="fas fa-book-reader"></i> Grammar & Vocabulary Helper</h1>
+
+    <textarea id="inputText" placeholder="Type your sentence here..."></textarea>
+    <br>
+    <button onclick="checkGrammar()"><i class="fas fa-spell-check"></i> Check Grammar</button>
+
+    <div id="loader" class="loader" style="display: none;"></div>
+
+    <h2><i class="fas fa-check-circle"></i> Corrected Sentence</h2>
+    <div id="corrected" class="output"></div>
+
+    <h2><i class="fas fa-exclamation-triangle"></i> Grammar Issues</h2>
+    <ul id="issues" class="output"></ul>
+
+    <h2><i class="fas fa-book"></i> Word Meanings</h2>
+    <ul id="meanings" class="output"></ul>
+  </div>
+
+  
+</body>
+</html>
